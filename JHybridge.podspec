@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "JHybridge"
   s.version      = "1.3.3"
-  s.summary      = "Yet another javascript / mobile native simple bridge for hybrid apps, back and forth..."
+  s.summary      = "Hybridge"
 
   s.description  = <<-DESC
                    When developing hybrid apps surely you'll need to access different native features and resources. 
@@ -12,11 +12,11 @@ Pod::Spec.new do |s|
   
   s.license      = { :type => "MIT", :file => "LICENSE.txt" }
 
-  s.authors  = { 'David Garcia' => 'davidgarsan@gmail.com', 'Guillermo Gonzalez' => 'gonzalezreal@icloud.com', 'Jsolutions' => 'leftmobile.com@gmail.com' }
+  s.authors  = { 'Jsolutions' => 'leftmobile.com@gmail.com', 'David Garcia' => 'davidgarsan@gmail.com', 'Guillermo Gonzalez' => 'gonzalezreal@icloud.com' }
 
   s.platform     = :ios
   s.ios.deployment_target = "6.0"
-  s.source       = { :git => "https://github.com/telefonicaid/j-hybridge.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/telefonicaid/j-hybridge.git", :tag => "1.3.3" }
 
   s.source_files = "ios/Hybridge/Hybridge/*.{h,m}"
   s.private_header_files = "ios/Hybridge/Hybridge/HYBURLProtocol.h", "ios/Hybridge/Hybridge/NSString+Hybridge.h"
