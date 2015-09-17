@@ -30,6 +30,22 @@
     self.webView.delegate = nil;
 }
 
+/**
+ *  From 1.3.3
+ *
+ *  @param aDecoder <#aDecoder description#>
+ *
+ *  @return <#return value description#>
+ */
+- (id) initWithCoder:(NSCoder *)aDecoder {
+    if(self = [super initWithCoder:aDecoder]) {
+        _bridge = [[HYBBridge alloc] init];
+        _bridge.delegate = self;
+    }
+    
+    return self;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     
