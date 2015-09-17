@@ -1,14 +1,12 @@
 Pod::Spec.new do |s|
   s.name         = "JHybridge"
-  s.version      = "1.3.4"
+  s.version      = "1.3.5"
   s.summary      = "Hybridge"
 
   s.description  = <<-DESC
-                   When developing hybrid apps surely you'll need to access different native features and resources. 
-                   Out there are plenty of bridge solutions. Hybridge tries to make easy communication and data 
-                   exchanging between native (iOS & Android) and Javascript worlds, avoiding too much overhead.
+  					Just a library.
                    DESC
-  s.homepage     = "https://github.com/telefonicaid/j-hybridge"
+  s.homepage     = "https://github.com/j14solutions/j-hybridge"
   
   s.license      = { :type => "MIT", :file => "LICENSE.txt" }
 
@@ -16,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
   s.ios.deployment_target = "6.0"
-  s.source       = { :git => "https://github.com/telefonicaid/j-hybridge.git", :tag => "1.3.4" }
+  s.source       = { :git => "https://github.com/j14solutions/j-hybridge.git", :tag => "1.3.5" }
 
   s.source_files = "ios/Hybridge/Hybridge/*.{h,m}"
   s.private_header_files = "ios/Hybridge/Hybridge/HYBURLProtocol.h", "ios/Hybridge/Hybridge/NSString+Hybridge.h"
