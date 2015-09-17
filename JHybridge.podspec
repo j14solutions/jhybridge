@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JHybridge"
-  s.version      = "1.0.0"
+  s.version      = "1.3.3"
   s.summary      = "Yet another javascript / mobile native simple bridge for hybrid apps, back and forth..."
 
   s.description  = <<-DESC
