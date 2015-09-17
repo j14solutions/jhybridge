@@ -3,7 +3,7 @@
 //  Hybridge
 //
 //  Copyright (c) 2014 Telefonica I+D. All rights reserved.
-//  Licensed under the Affero GNU GPL v3, see LICENSE for more details.
+//  Licensed under MIT, see LICENSE for more details.
 //
 
 #import "HYBWebViewController.h"
@@ -28,6 +28,22 @@
 - (void)dealloc {
     [self.webView stopLoading];
     self.webView.delegate = nil;
+}
+
+/**
+ *  From 1.3.3
+ *
+ *  @param aDecoder <#aDecoder description#>
+ *
+ *  @return <#return value description#>
+ */
+- (id) initWithCoder:(NSCoder *)aDecoder {
+    if(self = [super initWithCoder:aDecoder]) {
+        _bridge = [[HYBBridge alloc] init];
+        _bridge.delegate = self;
+    }
+    
+    return self;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -114,6 +130,12 @@
 #pragma mark - HYBBridgeDelegate
 
 - (NSArray *)bridgeActions:(HYBBridge *)bridge {
+    return nil;
+}
+
+#pragma mark - HYBBridgeDelegate
+
+- (NSDictionary *)bridgeCustomData:(HYBBridge *)bridge {
     return nil;
 }
 
